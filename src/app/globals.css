@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'PP Neue Montreal Book';
+  src:
+    url('/fonts/PPNeueMontreal-Book.woff2') format('woff2'),
+    url('/fonts/PPNeueMontreal-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src:
+    url('/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+    url('/fonts/PPNeueMontreal-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src:
+    url('/fonts/FoundersGrotesk-Regular.woff2') format('woff2'),
+    url('/fonts/FoundersGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src:
+    url('/fonts/FoundersGrotesk-Medium.woff2') format('woff2'),
+    url('/fonts/FoundersGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src:
+    url('/fonts/FoundersGrotesk-Light.woff2') format('woff2'),
+    url('/fonts/FoundersGrotesk-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src:
+    url('/fonts/InstrumentSerif-Italic.woff2') format('woff2'),
+    url('/fonts/InstrumentSerif-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src:
+    url('/fonts/InstrumentSerif-Regular.woff2') format('woff2'),
+    url('/fonts/InstrumentSerif-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import 'tailwindcss';
+
+:root {
+  --background: #000000;
+  --foreground: #f9f8fc;
+}
+
+body {
+  font-family: 'Founders Grotesk';
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--foreground);
+  background: var(--background);
+  @apply antialiased;
+}
+
+/* PPNeue Montreal */
+
+.tq__PPBook_250 {
+  font-family: 'PP Neue Montreal Book';
+  font-size: clamp(3rem, 20vw, 250px);
+}
+
+.tq__PPBook__100 {
+  font-family: 'PP Neue Montreal Book';
+  font-size: clamp(3rem, 8vw, 100px);
+}
+
+.tq__PPMedium__100 {
+  font-family: 'PP Neue Montreal';
+  font-size: clamp(3rem, 8vw, 100px);
+}
+
+.tq__PPBook__58 {
+  font-family: 'PP Neue Montreal Book';
+  font-size: clamp(1.5rem, 5vw, 58px);
+}
+
+.tq__PPMedium__58 {
+  font-family: 'PP Neue Montreal';
+  font-size: clamp(1.5rem, 5vw, 58px);
+}
+
+.tq__PPBook__36 {
+  font-family: 'PP Neue Montreal Book';
+  font-size: clamp(1rem, 4vw, 36px);
+}
+
+.tq__PPMedium__36 {
+  font-family: 'PP Neue Montreal';
+  font-size: clamp(1rem, 4vw, 36px);
+}
+
+/* Instrument Serif */
+
+.tq__Instrument_100 {
+  font-family: 'Instrument Serif';
+  font-size: clamp(3rem, 8vw, 100px);
+}
+
+.tq__Instrument_58 {
+  font-family: 'Instrument Serif';
+  font-size: clamp(1.5rem, 5vw, 58px);
+}
+
+.tq__Instrument_36 {
+  font-family: 'Instrument Serif';
+  font-size: clamp(1rem, 4vw, 36px);
+}
+
+.tq__Instrument_22 {
+  font-family: 'Instrument Serif';
+  font-size: clamp(1rem, 2.2vw, 22px);
+}
+
+/* Founders Grotesk */
+
+.tq__FoundersGrotesk_36 {
+  font-family: 'Founders Grotesk';
+  font-size: clamp(1rem, 4vw, 36px);
+}
+
+.tq__FoundersGrotesk_22 {
+  font-family: 'Founders Grotesk';
+  font-size: clamp(1rem, 2.2vw, 22px);
+}
+
+.tq__FoundersGrotesk_16 {
+  font-family: 'Founders Grotesk';
+  font-size: clamp(1rem, 2.1vw, 16px);
+}
+
+.tq__FoundersGrotesk_14 {
+  font-family: 'Founders Grotesk';
+  font-size: clamp(12px, 1.5vw, 14px);
+}
+
+input {
+  @apply outline-0;
+}
+
+.container {
+  width: 100%;
+  @media (width >= 40rem) {
+    max-width: 40rem;
+  }
+  @media (width >= 48rem) {
+    max-width: 48rem;
+  }
+  @media (width >= 64rem) {
+    max-width: 64rem;
+  }
+  @media (width >= 80rem) {
+    max-width: 80rem;
+  }
+  @media (width >= 96rem) {
+    max-width: 96rem;
+  }
+  @media (width >= 120rem) {
+    max-width: 120rem;
+  }
+}
+
+.tq__VideoWrapper {
+  width: 100vw;
+  @media (width >= 40rem) {
+    width: calc(100vw - calc(40rem / 2)) - 5rem;
+  }
+  @media (width >= 48rem) {
+    width: calc(100vw - calc(48rem / 2)) - 5rem;
+  }
+  @media (width >= 64rem) {
+    width: calc(100vw - calc(64rem / 2)) - 5rem;
+  }
+  @media (width >= 80rem) {
+    width: calc(100vw - calc(80rem / 2));
+  }
+  @media (width >= 96rem) {
+    width: calc(calc(100vw - calc(96rem / 2)) - 5rem);
+  }
+  @media (width >= 120rem) {
+    width: calc(calc(100vw - calc(120rem / 2)) + 0rem);
+  }
+}
+
+button,
+.button {
+  @apply uppercase text-black font-medium px-[15px] pt-[10px] pb-[6] bg-white rounded-full relative cursor-pointer overflow-hidden;
+}
+.button {
+  @apply inline-block;
+}
+.tq__button__text,
+.tq__button__layer-text {
+  @apply relative;
+  transition: top 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.tq__button__text {
+  @apply top-0;
+}
+.tq__button__layer {
+  @apply absolute left-0 top-[110%] w-full h-full flex justify-center items-center rounded-full;
+  transition: top 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.tq__button__layer .tq__button__layer-text {
+  @apply absolute text-white;
+}
+.tq__button__layer .tq__button__layer-background {
+  @apply w-full h-full bg-gray-500 rounded-full;
+  transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.tq__button:hover {
+  @apply bg-black;
+  transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.tq__button:hover .tq__button__text,
+.tq__button__text:hover {
+  @apply top-[-40px];
+}
+.tq__button:hover .tq__button__layer,
+.tq__button__text:hover + .tq__button__layer {
+  @apply top-0;
+}
+.tq__button__layer:hover .tq__button__layer-background,
+.tq__button__text:hover + .tq__button__layer .tq__button__layer-background {
+  @apply w-full rounded-full;
+}
